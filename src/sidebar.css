@@ -1,7 +1,7 @@
 .sidebar {
     display: flex;
     flex-direction: column;
-    flex: 0.20;
+    flex: 0.30;
 }
 
 .sidebar__header {
@@ -43,4 +43,17 @@
 .sidebar__searchcontainer>.MuiSvgIcon-root {
     color: gray;
     padding: 10px;
+}
+
+.sidebar__searchcontainer>input {
+    border: none;
+    outline-width: 0;
+    /*outline-width: 0; Empeche le bordure de s'afficher quand on clique sur le champs  */
+    margin-left: 10px;
+}
+
+.sidebar__chats {
+    flex: 1;
+    background-color: white;
+    overflow: scroll;
 }
